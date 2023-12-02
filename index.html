@@ -1,0 +1,69 @@
+<!--HTML Index Page start-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>VampDash</title>
+      <!--External CSS for page -->
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    
+    <!-- navgaition menu under nav tag -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">VampDash</a></div>     <!-- Vamp Dash main text/logo in nav-->
+
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>     <!-- nav lists/options in the menu -->
+          <li><a href="pages/leaderboard.html">Leaderboard</a></li>
+          <li><a href="pages/resources.html">Resources</a></li>
+          <li><a href="pages/game.html">Game</a></li>
+        </ul>
+        
+            <!--Div for Login and register buttons -->
+            <div class="nav-buttons" id="navButtons">
+              <a href="pages/login.html" class="login-nav" id="loginLink">Log in</a>
+              <a href="pages/register.html" class="btn" id="registerLink">Register</a>
+  
+              <!-- Logout link (initially hidden) -->
+              <a href="#" class="btn" id="logoutLink" style="display:none;" >Logout</a>
+              <span id="userName" style="display:none; text-decoration: none;
+              color: red;" ></span>
+            </div>
+            
+        
+        
+      </div>
+      
+    </nav>
+    <!-- End of navgaition tag -->
+
+
+    <!-- Main Home section start -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text">
+          <div class="text-one">Embrace the <br>Darkness,</div>
+          <div class="text-two">Dash into Immortality <br>with Vamp Dash!</div>
+        </div>
+        <div class="button">
+          <button><a href="pages/login.html"  style="text-decoration:none; color:#fff">Play Now!</a></button>
+        </div>
+      </div>
+    </section>
+    <!-- End of Home section-->
+
+
+    <script src="../js/userCheck.js"></script>
+
+  </body>
+ <!-- body tag closing -->
+
+</html>
+<!-- Index HTML page end -->
+
+
+
+

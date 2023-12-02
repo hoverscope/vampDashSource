@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>VampDash</title>
+
+    <!-- External CSS for page -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  
+  <body>
+    
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">VampDash</a></div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="game.html">Game</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+          <a href="login.html" class="login-nav">Log in</a>
+          <a href="register.html" class="btn">Register</a>
+        </div>
+        
+       
+
+      </div>
+    </nav>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <!-- Form div for all login forms and buttons, each styled accordingly with CSS and classes -->
+        <form class="form" id="loginForm">
+          <p class="title">Login</p>
+          <p class="message">Enter credentials below to Log In</p>
+
+          <label>
+            <input required="" placeholder="" type="text" class="input" id="loginUsername">
+            <span>Username</span>
+          </label> 
+            
+          <label>
+            <input required="" placeholder="" type="password" class="input" id="loginPassword">
+            <span>Password</span>
+          </label>
+
+          <!-- Call the submitForm function when the button is clicked -->
+          <button type="button" class="submit" onclick="loginUser()">Login</button>
+          <p class="signin">Don't have an account? <a href="register.html">Register</a></p>
+          <p class="signin">Or</p>
+        </form>
+
+        <button class="submit" style="max-width: 40%;">
+          <a href="game.html" style="text-decoration:none; color:#fff">Play as Guest</a>
+        </button>
+
+        <p id="errorMessage" class="error-message" style="color: #fff;"></p>
+
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+
+      <script src="../js/loginHandler.js"> </script>
+
+    </section>
+  </body>
+</html>

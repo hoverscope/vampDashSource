@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>VampDash</title>
+    <!-- External CSS for page -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <!-- navgaition menu -->
+
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="#">VampDash</a></div>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="game.html">Game</a></li>
+            </ul>
+
+            <div class="nav-buttons" id="navButtons">
+                <a href="login.html" class="login-nav" id="loginLink">Log in</a>
+                <a href="register.html" class="btn" id="registerLink">Register</a>
+
+                <!-- Logout link (initially hidden) -->
+                <a href="#" class="btn" id="logoutLink" style="display:none;">Logout</a>
+                <span id="userName" style="display:none; text-decoration: none; color: red;"></span>
+            </div>
+
+    </nav>
+
+    <section class="home" id="home">
+        <div class="home-content">
+
+            <!-- Main div text -->
+
+            <div class="text">
+                <div class="text-two">Top Players: Leaderboard</div>
+            </div>
+
+            <!-- Container div for leaderboard section-->
+
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Firstname</th>
+                            <th>Last Name</th>
+                            <th>Highest Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboardBody">
+                        <!-- Leaderboard rows will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/userCheck.js"></script>
+    <script src="../js/leaderboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>VampDash</title>
+    
+    <!--External CSS for page -->
+    <link rel="stylesheet" href="../css/style.css" />
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">VampDash</a></div>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="game.html">Game</a></li>
+
+        </ul>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-nav">Log in</a>
+            <a href="register.html" class="btn">Register</a>
+          </div>
+        
+      </div>
+      
+    </nav>
+
+    <section class="home" id="home">
+      <div class="home-content">
+
+        <!-- Form div for all Registration forms and buttons, each styled accordinly with Css and classes -->
+
+        <form class="form" id="registrationForm">
+
+          <p class="title">Register </p>
+          <p class="message">Enter credentials below to Sign Up</p>
+              <div class="flex">
+              <label>
+                  <input placeholder="" type="text" class="input" id="firstname">
+                  <span>Firstname</span>
+              </label>
+      
+              <label>
+                  <input placeholder="" type="text" class="input" id="lastname">
+                  <span>Lastname</span>
+              </label>
+          </div>  
+
+          <label>
+            <input placeholder="" type="text" class="input" id="username">
+            <span>Username</span>
+        </label> 
+                  
+          <label>
+              <input placeholder="" type="email" class="input" id="email">
+              <span>Email</span>
+          </label> 
+              
+          <label>
+              <input placeholder="" type="password" class="input" id="password">
+              <span>Password</span>
+          </label>
+          <label>
+              <input placeholder="" type="password" class="input" id="confirm-password">
+              <span>Confirm password</span>
+          </label>
+          <button class="submit" onclick="registerUser()">Register</button>
+          <p class="signin">Already have an acount ? <a href="login.html">login</a> </p>
+          <p class="signin">Or</p>
+
+
+      </form>
+
+      <button class="submit" style="max-width: 40%;">
+        <a href="game.html" style="text-decoration:none; color:#fff">Play as Guest</a>
+      </button>
+    
+      <p id="errorMessage" class="error-message" style="color: #fff;"></p>
+
+      <!-- Include CryptoJS from a CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+
+      <script src="../js/userRegistration.js"></script>
+
+    </section>
+  </body>
+</html>
